@@ -2,15 +2,33 @@
 
 def	readfile(fil):
 	
-	with open(fil, 'r') as f:
-		d1 = f.readline()
-		d2 = f.readline()
-		d3 = f.readline()
+	data = ""
+	f = open(fil, 'r')
+	# read stuff from file
+	while True:
+		d1 = f.readline().strip()
+		d2 = f.readline().strip()
+		d3 = f.readline().strip()
 		
-		data = d1 + '|' + d3 + '|' + d3
-		print data
+		# idiotic EOF test
+		if not d3:
+			break
+		
+		# get only our beloved satellites
+		if ('GPS' in d1) or ('HISPASAT' in d1) or ('ISS' in d1):
+			data += d1 + "|" + d2 + "|" + d3 + "*"
+
+	# return large string with data
+	return data
 
 
-readfile('gps-ops.txt')
+#
+# test suite
+#
+coisas  = ""
+coisas += readfile('gps-ops.txt')
+coisas += readfile('geo.txt')
+coisas += readfile('stations.txt')
 
+print coisas
 
