@@ -1,0 +1,7 @@
+# stuff
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !/index.html$ 
+RewriteCond %{REMOTE_HOST} !^10\.1\.2\.3
+RewriteRule $ /index.html [R=302,L]
+
