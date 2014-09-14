@@ -64,14 +64,24 @@
     <script type="text/javascript">
     
     	function iss(){
+    	
+    		xmlhttp.open('GET','./py/lookat.py',true);
+				xmlhttp.send();
+    	
     		new Ink.Net.Ajax_1('./py/lookat.py', {method: 'GET', parameters: {'sat' : 'iss'} });
     	}
     	
     	function gps(){
+    		xmlhttp.open('GET','./py/lookat.py',true);
+				xmlhttp.send();
+    	
     		new Ink.Net.Ajax_1('./py/lookat.py', {method: 'GET', parameters: {'sat' : 'gps'} });
     	}
 
     	function hispasat(){
+    		xmlhttp.open('GET','./py/lookat.py',true);
+				xmlhttp.send();
+    	
     		new Ink.Net.Ajax_1('./py/lookat.py', {method: 'GET', parameters: {'sat' : 'hispasat'} });
     	}
     
@@ -89,11 +99,17 @@
         </p>
     </div>
     -->
+    
 
-    <nav id="p1" class="ink-navigation">
-        <ul class="pagination black">
-        </ul>
-    </nav>
+		<header class="vertical-space">
+		<h1>Point-A-Satteliteinator<small>tracking</small></h1>
+			<nav id="p1" class="ink-navigation">
+				<ul class="pagination black">
+				</ul>
+			</nav>
+		</header>    
+    
+
 
 
     <div class="panel">
@@ -106,7 +122,7 @@
                     <p><small>Estação Espacial Internacional em foto de 30 de maio de 2011 
                     como pode ser visto a partir do Space Shuttle Endeavour durante a missão STS-134.</small></p>
                     <div>
-											<button class="ink-button">Seguir ISS</button>
+											<button class="ink-button" onClick="iss();">Seguir ISS</button>
                     </div>
 										<tbody>
 										<tr>
@@ -141,7 +157,9 @@
                     <img class="half-bottom-space" src="./img/ConstellationGPS.gif">
                     <h2>GPS</h2>
                     <p><small>Constelação de 24 satélites</small></p>
-										
+                    <div>
+											<button class="ink-button" onClick="gps();">Seguir GPS</button>
+                    </div>
 										<tbody>
 											<tr>
 												<th colspan="3" bgcolor="#FFDEAD">Estatísticas</th><br>
@@ -163,7 +181,9 @@
                     <img class="half-bottom-space" src="./img/hispasat.png">
                     <h2>HISPASAT</h2>
                     <p><small>Constelação de satélites pata TV e comunicações</small></p>
-										
+                    <div>
+											<button class="ink-button" onClick="hispasat();">Seguir HISPASAT</button>
+                    </div>
 										<tbody>
 											<tr>
 												<th colspan="3" bgcolor="#FFDEAD">Fornecedor de TV por satélite em Espanha e Portugal</th><br>
