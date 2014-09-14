@@ -60,6 +60,23 @@
     </head>
 
     <body>
+    
+    <script type="text/javascript">
+    
+    	function iss(){
+    		new Ink.Net.Ajax_1('./py/lookat.py', {method: 'GET', parameters: {'sat' : 'iss'} });
+    	}
+    	
+    	function gps(){
+    		new Ink.Net.Ajax_1('./py/lookat.py', {method: 'GET', parameters: {'sat' : 'gps'} });
+    	}
+
+    	function hispasat(){
+    		new Ink.Net.Ajax_1('./py/lookat.py', {method: 'GET', parameters: {'sat' : 'hispasat'} });
+    	}
+    
+    
+    </script>
 
 <div class="ink-grid vertical-space">
 
@@ -88,7 +105,9 @@
                     
                     <p><small>Estação Espacial Internacional em foto de 30 de maio de 2011 
                     como pode ser visto a partir do Space Shuttle Endeavour durante a missão STS-134.</small></p>
-										
+                    <div>
+											<button class="ink-button">Seguir ISS</button>
+                    </div>
 										<tbody>
 										<tr>
 											<th colspan="3" bgcolor="#FFDEAD">Estatísticas</th><br>
