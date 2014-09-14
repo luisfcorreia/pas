@@ -4,45 +4,39 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>3 Boxes</title>
+        <title>Point-A-Satelliteinator</title>
         <meta name="description" content="">
-        <meta name="Luis Correia" content="ink, satellite">
+        <meta name="Luis Correia, Nuno Correia" content="ink, satellite">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
         <!-- Place favicon.ico and apple-touch-icon(s) here  -->
 
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" href="/img/touch-icon.57.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/touch-icon.72.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/touch-icon.114.png">
-        <link rel="apple-touch-startup-image" href="/img/splash.320x460.png" media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
-        <link rel="apple-touch-startup-image" href="/img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
-        <link rel="apple-touch-startup-image" href="/img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="./img/point.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/point.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/point.png">
+        <link rel="apple-touch-startup-image" href="./img/point.png" media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="./img/point.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="./img/point.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
 
         <!-- load inks css from the cdn -->
-        <link rel="stylesheet" type="text/css" href="/css/ink-flex.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
-
-        <!-- load inks css for IE8 -->
-        <!--[if lt IE 9 ]>
-            <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.0.5/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
-        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="./css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 
         <!-- test browser flexbox support and load legacy grid if unsupported -->
-        <script type="text/javascript" src="/js/modernizr.js"></script>
+        <script type="text/javascript" src="./js/modernizr.js"></script>
         <script type="text/javascript">
             Modernizr.load({
               test: Modernizr.flexbox,
-              nope : '/css/ink-legacy.min.css'
+              nope : './css/ink-legacy.min.css'
             });
         </script>
 
-        <!-- load inks javascript files from the cdn -->
-        <script type="text/javascript" src="/js/holder.js"></script>
-        <script type="text/javascript" src="/js/ink-all.min.js"></script>
-        <script type="text/javascript" src="/js/autoload.js"></script>
+        <!-- load inks javascript files -->
+        <script type="text/javascript" src="./js/ink-all.min.js"></script>
+        <script type="text/javascript" src="./js/autoload.js"></script>
 
 
         <style type="text/css">
@@ -69,40 +63,108 @@
 
         <div class="ink-grid">
 
-            <!--[if lte IE 9 ]>
-            <div class="ink-alert basic" role="alert">
-                <button class="ink-dismiss">&times;</button>
-                <p>
-                    <strong>You are using an outdated Internet Explorer version.</strong>
-                    Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.
-                </p>
-            </div>
-            -->
-
-            <!-- Add your site or application content here -->
-
             <header class="vertical-space">
-                <h1>site name<small>smaller text</small></h1>
+                <h1>Point-A-Satelliteinator<small>tracking</small></h1>
                 <nav class="ink-navigation">
                     <ul class="menu horizontal black">
-                        <li class="active"><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
+                        <li class="active"><a href="#">ISS</a></li>
+                        <li><a href="#">HISPASAT</a></li>
+                        <li><a href="#">GPS</a></li>
                     </ul>
                 </nav>
             </header>
+            
             <div class="column-group gutters">
                 <div class="all-100">
-                    <h2>heading</h2>
-                    <img src="holder.js/1650x928/auto/ink" alt="">
+                    <h2>Estação Espacial Internacional</h2>
+                    <img src="./img/STS-134_International_Space_Station_after_undocking.jpg" alt="">
+                    <p><small>Estação Espacial Internacional em foto de 30 de maio de 2011 como pode ser visto a partir do Space Shuttle Endeavour durante a missão STS-134.</small></p>
+										
+										<tbody>
+										<tr>
+											<th colspan="3" bgcolor="#FFDEAD">Estatísticas</th><br>
+										</tr>
+										<tr>
+											<td width="100">
+												Tripulação:6<br>
+												Gravidade Terrestre: ~8,3760683 m/s²<br>
+												Altitude média: 340,5 km<br>
+												Período Orbital: 91,34 minutos<br>
+												Inclinação: 51,64 graus<br>
+												Órbitas por dia: 15,70<br>
+												Desvio médio diário em altitude: ~88 m<br>
+												<br>
+												Lançamento Módulo Zarya: 20 de Novembro de 1998 06:40:27 GMT<br>
+												Data de ocupação (Expedição 1) 1 de Novembro de 2000 09:21 GMT<br>
+												Países: Estados Unidos, Rússia, Agência Espacial Europeia, Japão, Canadá<br>
+												Velocidade média: 7,69 km/s (27,685.7 km/h)<br>
+												Massa atual: 303.663 kg (28 de Março de 2009)<br>
+												Volume da área de circulação: 358 m³<br>
+												Pressão: ~757 mmHg (100 kPa)<br>
+												Oxigénio: ~162,4 mmHg (22 kPa)<br>
+												Dióxido de carbono: ~4,8 mmHg (640 Pa)<br>
+												Temperatura: ~26,9 °C<br>
+											</td>
+										</tr>
+										</tbody>            
                 </div>
             </div>
+
+            <div class="column-group gutters">
+                <div class="all-100">
+                    <h2>GPS</h2>
+                    <img src="./img/ConstellationGPS.gif" alt="">
+                    <p><small>Constelação de 24 satélites</small></p>
+										
+										<tbody>
+											<tr>
+												<th colspan="3" bgcolor="#FFDEAD">Estatísticas</th><br>
+											</tr>
+											<tr>
+												<td width="100">
+													Satélites:24<br>
+													Satélites visíveis: entre 6 e 11, dependendo da latitude<br>
+													Precisão para uso civil: metros (menos com processamento)<br>
+													Precisão para uso militar: centímetros<br>
+													<br>
+													Lançamento: de 1978 a 2010<br>
+												</td>
+											</tr>
+										</tbody>            
+                </div>
+            </div>
+
+            <div class="column-group gutters">
+                <div class="all-100">
+                    <h2>GPS</h2>
+                    <img src="./img/Hispasat.gif" alt="">
+                    <p><small>HISPASAT </small></p>
+										
+										<tbody>
+											<tr>
+												<th colspan="3" bgcolor="#FFDEAD">Estatísticas</th><br>
+											</tr>
+											<tr>
+												<td width="100">
+													Satélites:24<br>
+													Satélites visíveis: entre 6 e 11, dependendo da latitude<br>
+													Precisão para uso civil: metros (menos com processamento)<br>
+													Precisão para uso militar: centímetros<br>
+													<br>
+													Lançamento: de 1978 a 2010<br>
+												</td>
+											</tr>
+										</tbody>            
+                </div>
+            </div>
+
+
+            
         </div>
         <footer class="clearfix">
             <div class="ink-grid">
                 <ul class="unstyled inline half-vertical-space">
                     <li class="active"><a href="#">About</a></li>
-                    <li><a href="#">Sitemap</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
                 <p class="note">done by those crazy guys @<a href="http://labs.oneoverzero.org">OOZ Labs</a></p>
