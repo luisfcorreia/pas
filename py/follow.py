@@ -6,10 +6,10 @@ import os
 from datetime import datetime
 degrees_per_radian = 180.0 / math.pi
 
-def compute_alt(altitude)
+def compute_alt(altitude):
     return int(50 * int(altitude) / 90)
 
-def compute_azimuth(azimuth)
+def compute_azimuth(azimuth):
     return int(azimuth/3.6)
 
 # This is Lisbon, Portugal
