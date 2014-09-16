@@ -15,7 +15,7 @@ def	readfile(fil):
 			break
 		
 		# get only our beloved satellites
-		if ('GPS' in d1) or ('HISPASAT' in d1) or ('ISS' in d1):
+		if ('GPS' in d1) or ('HISPASAT' in d1) or ('ISS' in d1) or ('IRIDIUM' in d1):
 			data += d1 + "|" + d2 + "|" + d3 + "*"
 
 	# return large string with data
@@ -29,6 +29,12 @@ coisas  = ""
 coisas += readfile('gps-ops.txt')
 coisas += readfile('geo.txt')
 coisas += readfile('stations.txt')
+coisas += readfile('iridium.txt')
 
-print coisas
+f = open('sats.txt', 'w')
+
+f.write(coisas)
+f.close
+
+#print coisas
 

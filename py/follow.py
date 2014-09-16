@@ -10,7 +10,7 @@ def compute_alt(altitude):
     return int(50 * int(abs(altitude)) / 90)
 
 def compute_azimuth(azimuth):
-    return int(abs(azimuth)/3.6)
+    return int(azimuth/3.6)
 
 # This is Lisbon, Portugal
 home = ephem.Observer()
