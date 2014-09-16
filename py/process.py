@@ -15,26 +15,25 @@ def	readfile(fil):
 			break
 		
 		# get only our beloved satellites
-		if ('GPS' in d1) or ('HISPASAT' in d1) or ('ISS' in d1) or ('IRIDIUM' in d1):
+		if ('GPS' in d1) or ('HISPASAT' in d1) or ('ASTRA 4' in d1) or ('ISS' in d1) or ('IRIDIUM' in d1) or ('COSMOS' in d1):
 			data += d1 + "|" + d2 + "|" + d3 + "*"
+#		data += d1 + "|" + d2 + "|" + d3 + "*"
 
 	# return large string with data
 	return data
 
+def makestuff():
 
-#
-# test suite
-#
-coisas  = ""
-coisas += readfile('gps-ops.txt')
-coisas += readfile('geo.txt')
-coisas += readfile('stations.txt')
-coisas += readfile('iridium.txt')
+	coisas  = ""
+	coisas += readfile('gps-ops.txt')
+	coisas += readfile('geo.txt')
+	coisas += readfile('stations.txt')
+	coisas += readfile('iridium.txt')
+	coisas += readfile('glo-ops.txt')
 
-f = open('sats.txt', 'w')
+	f = open('sats.txt', 'w')
 
-f.write(coisas)
-f.close
+	f.write(coisas)
+	f.close
 
-#print coisas
 
