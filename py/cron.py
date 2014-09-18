@@ -60,4 +60,3 @@ for sat in plist:
 			f.write(sat1[1]+'\n')
 			f.write(sat1[2]+'\n')
 
-
