@@ -37,3 +37,4 @@ def makestuff():
 	f.close
 
 
+	return coisas
