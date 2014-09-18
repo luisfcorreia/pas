@@ -14,9 +14,9 @@ def compute_azimuth(azimuth):
 
 # This is Lisbon, Portugal
 home = ephem.Observer()
-home.lon = '-9.9'   # +E
-home.lat = '34.44'      # +N
-home.elevation = 10 # meters 
+home.lon = '-9.1333'   # +E
+home.lat = '38.7667'      # +N
+home.elevation = 123 # meters 
 
 # Always get the latest ISS TLE data from:
 # http://spaceflight.nasa.gov/realdata/sightings/SSapplications/Post/JavaSSOP/orbit/ISS/SVPOST.html
@@ -24,9 +24,9 @@ iss = ephem.readtle(
 #'ISS (ZARYA)',
 #'1 25544U 98067A   14245.51991314  .00013026  00000-0  23431-3 0   101',
 #'2 25544  51.6451  76.2836 0003709  72.7397  20.6341 15.50183561903328'
-'GPS BIIR-7  (PRN 18)',
-'1 26690U 01004A   14258.27923102 -.00000011  00000-0  00000+0 0  3653',
-'2 26690  53.0316 199.8591 0156962 245.0384 340.9447  2.00556488 99849'
+'GPS BIIF-6  (PRN 06)',    
+'1 39741U 14026A   14258.69389229 -.00000041  00000-0  00000+0 0  1127',
+'2 39741  55.0732 140.3956 0003099 145.3158 214.7630  2.00572832  2435'
 )
 
 while True:
