@@ -49,8 +49,13 @@ get_them('COS',1)
 get_them('IRI',2)
 get_them('HIS',1)
 
-for sat in plist:
-	print sat.name
 
+for sat in plist:
+	for tle in sats:
+		sat1 = tle.split('|')
+		if sat1[0] == sat.name:
+			print sat1[0]
+			print sat1[1]
+			print sat1[2]
 
 
